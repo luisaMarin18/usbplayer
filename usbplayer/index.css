@@ -1,0 +1,93 @@
+body {
+    background-color: #001f3f; /* Azul oscuro */
+}
+
+.navbar {
+    background-color: #003366;
+}
+
+.search-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.card audio {
+    width: 100%;
+}
+
+/* Estilo para las tarjetas */
+.card {
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(105, 159, 202, 0.822);
+}
+
+/* Imagen de la canción */
+.card img {
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo del reproductor */
+
+audio {
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 2px solid #ff6b6b; /* Borde de color atractivo */
+    transition: border-color 0.3s ease;
+}
+
+/* Efecto al pasar el cursor por encima del reproductor */
+
+audio:hover {
+    border-color: #ff6b6b;
+}
+
+/* Estilo de la tarjeta cuando se pasa el mouse */
+.card-body {
+    text-align: center;
+    padding: 15px;
+}
+
+/* Títulos y texto */
+.card-title {
+    color: #ff6b6b;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #dcdcdc;
+    font-size: 1rem;
+}
+
+/* Efecto de animación para cargar la tarjeta */
+.card-body {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animación para cuando se hace una búsqueda */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto del hover sobre la tarjeta */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(60, 21, 233, 0.568);
+}
